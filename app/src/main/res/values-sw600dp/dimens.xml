@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_item_extra_padding">100dp</dimen>
+    <dimen name="spacing_normal">12dp</dimen>
+    <dimen name="spacing_micro">8dp</dimen>
+    <dimen name="padding_normal">24dp</dimen>
+
+    <dimen name="bottom_sheet_margin">32dp</dimen>
+    <dimen name="bottom_sheet_sample_title">72dp</dimen>
+    <dimen name="bottom_sheet_item_height">64dp</dimen>
+    <dimen name="bottom_sheet_item_icon_padding">4dp</dimen>
+
+    <dimen name="current_location_fab_margin">16dp</dimen>
+</resources>

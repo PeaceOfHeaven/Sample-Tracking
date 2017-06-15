@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">MapExample</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="current_location_btn">Current Location</string>
+    <string name="save_location_btn">Lưu</string>
+    <string name="name_txtview_text">Tên</string>
+    <string name="back_btn">&lt;&lt;</string>
+
+    <string name="google_geocoding_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyAjE2zD856Nw0hdUTtQQqpseudEvAZPmPA
+    </string>
+
+    <string name="search_hint_by_name">tên</string>
+    <string name="search_hint_by_id">id</string>
+    <string name="search_title">Search</string>
+    <string name="find_location_message">Đang tìm vị trí...</string>
+
+    <!-- Menu item that allows the user to start a search for a session by name. After clicking,
+    they type in their search query. -->
+    <string name="description_search">Search</string>
+    <!-- Label for Search screen, that allows users to search for sessions. -->
+    <string name="title_search">Search</string>
+    <string name="edit_sample_menu_title">Edit</string>
+    <string name="delete_sample_menu_title">Delete</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="grid_layout_1_instructions">Type here:</string>
+    <string name="grid_layout_1_ok">Ok</string>
+    <string name="grid_layout_1_cancel">Cancel</string>
+
+    <string name="sample_default_result_text">Chưa có kết quả</string>
+
+</resources>

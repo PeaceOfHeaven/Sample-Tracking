@@ -1,0 +1,69 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.Design.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="bottomSheetDialogTheme">@style/MyAppCompatDialog</item>
+    </style>
+
+    <style name="MyAppCompatDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/MyBottomSheet</item>
+        <!--<item name="android:windowAnimationStyle">@style/MyBottomSheetAnimator</item>-->
+    </style>
+
+    <style name="MyBottomSheetAnimator" parent="Animation.Design.BottomSheetDialog">
+        <item name="android:windowEnterAnimation">@null</item>
+    </style>
+
+    <style name="MyBottomSheet" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.Search" parent="AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="searchViewStyle">@style/Widget.SearchView</item>
+        <item name="colorControlNormal">@color/app_body_text_2</item>
+        <item name="colorControlActivated">@color/theme_accent_1</item>
+    </style>
+
+    <style name="Widget.SearchView" parent="Widget.AppCompat.SearchView">
+        <item name="searchHintIcon">@null</item>
+        <item name="queryBackground">@null</item>
+        <item name="submitBackground">@null</item>
+    </style>
+
+    <style name="SearchViewTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">@color/app_body_text_1</item>
+        <item name="colorControlNormal">@color/app_body_text_2</item>
+        <item name="colorControlActivated">@color/theme_accent_1</item>
+    </style>
+
+    <style name="BottomSheetItemStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/bottom_sheet_item_height</item>
+        <item name="android:paddingLeft">@dimen/card_content_padding</item>
+        <item name="android:paddingRight">@dimen/card_content_padding</item>
+    </style>
+
+    <style name="BottomSheetItemIconStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:alpha">0.26</item>
+        <item name="android:padding">@dimen/bottom_sheet_item_icon_padding</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="control_style">
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+
+</resources>

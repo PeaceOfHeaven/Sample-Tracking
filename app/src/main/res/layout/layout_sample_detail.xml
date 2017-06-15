@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@null">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="@dimen/bottom_sheet_margin"
+        android:layout_marginRight="@dimen/bottom_sheet_margin"
+        app:cardPreventCornerOverlap="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bottom_sheet_sample_title"
+                android:orientation="horizontal"
+                android:padding="@dimen/card_content_padding">
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Headline"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="Mẫu Thử"
+                    android:textColor="?android:textColorPrimary"/>
+
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/edit_sample_action"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:alpha="0.54"
+                        android:src="@drawable/ic_mode_edit_black_24dp"/>
+
+                    <ImageView
+                        android:id="@+id/cancel_sample_action"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:visibility="invisible"
+                        android:alpha="0.54"
+                        android:src="@drawable/ic_clear_black_24dp"/>
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/delete_sample_action"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:alpha="0.54"
+                        android:src="@drawable/ic_delete_black_24dp"/>
+
+                    <ImageView
+                        android:id="@+id/done_sample_action"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:visibility="invisible"
+                        android:alpha="0.54"
+                        android:src="@drawable/ic_done_black_24dp"/>
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/card_content_padding"
+                android:layout_marginRight="@dimen/card_content_padding"
+                android:background="#1F000000"/>
+
+            <FrameLayout
+                style="@style/BottomSheetItemStyle">
+
+                <ImageView
+                    style="@style/BottomSheetItemIconStyle"
+                    android:src="@drawable/ic_face_black_36dp"/>
+
+                <TextView
+                    android:id="@+id/sampleNameTV"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="72dp"
+                    android:gravity="center_vertical"
+                    android:text="evichrock"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/BottomSheetItemStyle">
+
+                <ImageView
+                    style="@style/BottomSheetItemIconStyle"
+                    android:src="@drawable/ic_layers_black_36dp"/>
+
+                <TextView
+                    android:id="@+id/sampleIdTV"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="72dp"
+                    android:gravity="center_vertical"
+                    android:text="2004151"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/BottomSheetItemStyle">
+
+                <ImageView
+                    style="@style/BottomSheetItemIconStyle"
+                    android:src="@drawable/ic_feedback_black_36dp"/>
+
+                <EditText
+                    android:id="@+id/sampleResultTV"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="72dp"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:text="Chua thi nghiem"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/BottomSheetItemStyle"
+                android:layout_gravity="top"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/BottomSheetItemIconStyle"
+                    android:layout_gravity="top"
+                    android:paddingTop="0dp"
+                    android:paddingBottom="0dp"
+                    android:src="@drawable/ic_place_black_36dp"/>
+
+                <EditText
+                    android:id="@+id/sampleAddressTV"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="72dp"
+                    android:layout_marginRight="48dp"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="@android:color/transparent"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:gravity="top"
+                    android:minHeight="@dimen/bottom_sheet_item_height"
+                    android:text="614 Quốc lộ 13, Hiệp Bình Phước, Thủ Đức, Hồ Chí Minh, Vietnam"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <FrameLayout
+                    android:id="@+id/locationBtn"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="top|right">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right|top"
+                        android:src="@drawable/ic_my_location_black_24dp"
+                        android:tint="@color/material_deep_teal_500"/>
+                </FrameLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/BottomSheetItemStyle">
+
+                <ImageView
+                    style="@style/BottomSheetItemIconStyle"
+                    android:src="@drawable/ic_schedule_black_36dp"/>
+
+                <TextView
+                    android:id="@+id/sampleTimeTV"
+                    style="@style/TextAppearance.AppCompat.Subhead"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="72dp"
+                    android:gravity="center_vertical"
+                    android:text="Jan 8 '15 at 11:40"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+            </FrameLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>
